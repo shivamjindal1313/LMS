@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{%block title %} HOME {%endblock title %}
+{%block body %}
+THIS IS REGISTER PAGE OF SUPERLADY
+
+<form method="post" action="/">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="name" >Name</label>
+      <input type="text" class="form-control" id="name" name="name">
+    </div>
+    <div class="form-group">
+        <label for="number">Phone No.</label>
+        <input type="phone" class="form-control" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+      <label for="number">Address</label>
+      <input type="address" class="form-control" id="address" name="address">
+    </div>
+    <div class="form-group">
+        <label for="number">Language</label>
+        <input type="language" class="form-control" id="language" name="language">
+      </div>
+    <div class="form-group">
+      <label for="number">Pincode</label>
+      <input type="text" class="form-control" id="pincode" name="pincode">
+    </div>
+    <button class="btn btn-primary" type="sumbit">ENTER TO DB</button>
+  </form>
+{%endblock body %}

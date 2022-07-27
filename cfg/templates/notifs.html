@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{%block title %} NOTIFS {%endblock title %}
+{%block body %}
+
+<form method="post" action="/notifs">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="name" >Name</label>
+      <input type="text" class="form-control" id="name" name="name">
+    </div>
+    <div class="form-group">
+        <label for="number">Phone No.</label>
+        <input type="phone" class="form-control" id="phone" name="phone">
+      </div>
+    <button class="btn btn-primary" type="sumbit">ENTER TO DB</button>
+  </form>
+
+
+
+
+{%endblock body %}

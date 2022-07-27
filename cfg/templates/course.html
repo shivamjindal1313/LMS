@@ -1,0 +1,19 @@
+{% extends 'base.html' %} 
+
+{% block title %} COURSE {%endblock title %}
+
+{%block body %} 
+THIS IS COURSE SELECTION OF SUPERLADY
+
+<form action="/" method="get" name="course">
+    <div class="form-group">
+      <label for="name" >Name of user</label>
+      <input type="text" class="form-control" id="name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="number">Select a course for the user:</label>
+      <input type="text" class="form-control" id="course" name="course">
+    </div>
+    <button class="btn btn-primary" type="sumbit">ASSIGN COURSE</button>
+  </form>
+{%endblock body %}
